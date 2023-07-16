@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: var(--gray, #48484A);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.text {
+    color: var(--hint, #ACACAC);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn {
+    color: var(--gray, #48484A);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #ACACAC;
+}
+
+.wrapper {
+    display: flex;
+
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.weather-now {
+    min-width: 460px;
+
+	background: url(./img/snowflake.png) center 116px no-repeat, 
+				url(./img/cloud-background.jpg) center 110px no-repeat;
+}
+
+/*  Работа с бургер-меню */
+.burger-menu_active {
+    background-color: transparent;
+}
+
+.burger-menu__content {
+    width: 460px;
+    padding: 46px;
+
+    position: fixed;
+    z-index: 30;
+
+    display: flex;
+    flex-flow: column;
+
+    height: 100%;
+    left: -100%;
+    background: var(--panel-light, #FFF);
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.burger-menu__close-box {
+    margin-bottom: 46px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burger-menu__close-panel {
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+}
+
+.burger-menu_active .burger-menu__content {
+    left: 0;
+}
+
+.burger-menu__nav {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger-menu__search {
+    width: 250px;
+    height: 50px;
+    padding: 0 44px;
+
+    flex-shrink: 0;
+    text-align: start;
+
+    font-weight: 500;
+    line-height: normal;
+}
+
+.burger-menu__search:focus {
+    outline-color: #48484A;
+}
+
+.burger-menu__search::placeholder {
+    color: #48484A;
+    text-align: left;
+}
+
+.burger-menu__img-search {
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 17px;
+
+    transform: translateY(-50%);
+}
+
+.burger-menu__find {
+    width: 97px;
+    height: 50px;
+    
+    flex-shrink: 0;
+    font-weight: 700;
+}
+
+/* /Работа с бургер-меню */
+
+.weather-now__find-city {
+    margin-top: 42px;
+    margin-left: 42px;
+}
+
+.weather-now__btn {
+    width: 180px;
+    height: 50px;
+    margin-bottom: 224px;
+    
+    transition: all ease-in 0.25s;
+}
+
+.weather-now__btn:hover {
+    background-color:  #f1f1f1;
+    border: 2px solid #48484A;
+}
+
+.weather-now__temperature {
+    text-align: center;
+}
+
+.weather-now__value {
+    color: var(--gray, #48484A);
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.weather-now__degrees {
+    color: var(--gray, #48484A);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.weather-now__wether {
+    margin-top: 17px;
+    text-align: center;
+}
+
+.weather-now__feeling {
+    margin-top: 17px;
+    margin-bottom: 78px;
+}
+
+.weather-now__wrapper {
+    margin-top: 17px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 88px;
+}
+
+.weather-now__date {
+    width: 100px;
+    text-align: center;
+}
+
+.weather-now__number {
+    width: 100px;
+    text-align: center;
+}
+
+.weather-now__city {
+    position: relative;
+    margin-top: 35px;
+    padding-left: 13px;
+    text-align: center;
+}
+  
+.weather-now__city:before {
+	content: '';
+    top: -50%;
+    left: 153px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+	width: 40px;
+	height: 40px;
+    background-image: url(./img/location.svg);
+    background-repeat: no-repeat;
+    background-size: initial;
+}

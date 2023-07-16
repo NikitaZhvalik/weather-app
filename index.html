@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="weather-now">
+
+            <div class="burger-menu">
+                <div class="burger-menu__content">
+                    <div class="burger-menu__close-box">
+                        <button class="burger-menu__close-panel">
+                            <svg class="burger-menu__close-cross" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="Vector" d="M26 2.61857L23.3814 0L13 10.3814L2.61857 0L0 2.61857L10.3814 13L0 23.3814L2.61857 26L13 15.6186L23.3814 26L26 23.3814L15.6186 13L26 2.61857Z" fill="#48484A"/>
+                            </svg>    
+                        </button>
+                    </div>
+                    <nav class="burger-menu__nav">
+                        <input class="btn burger-menu__search" type="text" placeholder="Mосква">
+                        <img class="burger-menu__img-search" src="./img/search.svg">
+                        <button class="btn burger-menu__find">Найти</button>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="weather-now__find-city">
+                <button class="btn weather-now__btn">
+                    Поиск города
+                </button>
+            </div>
+            <div class="weather-now__temperature">
+                <p><span class="weather-now__value">1 </span><span class="weather-now__degrees">°C</span></p>
+                <h2 class="h2 weather-now__wether">Cнег</h2>
+                <p class="text weather-now__feeling">Ощущается как -3 °C</p>
+            </div>
+            <div class="text weather-now__wrapper">
+                <div class="weather-now__date">
+                    <p>Сегодня</p>
+                </div>
+                <div class="weather-now__number">
+                    <p>Вс, 13 мар</p>
+                </div>
+            </div>
+            <div>
+                <p class="text weather-now__city">Москва</p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
