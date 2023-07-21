@@ -1,21 +1,11 @@
-function burgerMenu() {
-	const btn = document.querySelector('.weather-now__btn');
-	const menu = document.querySelector('.burger-menu');
-	const btnClose = document.querySelector('.burger-menu__close-panel');
+const searchPanelContainer = document.querySelector('.weather-now');
 
-	btn.addEventListener('click', (e) => {
-		e.preventDefault();
-		toggleMenu();
-	})
-
-	btnClose.addEventListener('click', (e) => {
-		e.preventDefault();
-		toggleMenu();
-	})
-
-	function toggleMenu() {
-		menu.classList.toggle('burger-menu_active');
-	}
+const toggleSearchPanel = (e) => {
+    if (e.target.matches('.weather-now__btn')) {
+        searchPanelContainer.classList.add('burger-menu_active');
+    } else if (e.target.matches('.burger-menu__close-cross')) {
+        searchPanelContainer.classList.remove('burger-menu_active');
+    }
 }
 
-burgerMenu();
+searchPanelContainer.addEventListener('click', toggleSearchPanel)
