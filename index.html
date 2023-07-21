@@ -11,26 +11,25 @@
 <body>
     <div class="wrapper">
         <aside class="weather-now">
-
             <div class="burger-menu">
                 <div class="burger-menu__content">
                     <div class="burger-menu__close-box">
                         <button class="burger-menu__close-panel">
-                            <svg class="burger-menu__close-cross" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path id="Vector" d="M26 2.61857L23.3814 0L13 10.3814L2.61857 0L0 2.61857L10.3814 13L0 23.3814L2.61857 26L13 15.6186L23.3814 26L26 23.3814L15.6186 13L26 2.61857Z" fill="#48484A"/>
-                            </svg>    
+                            <svg class="burger-menu__close-cross" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <path class="burger-menu__close-cross" d="M26 2.61857L23.3814 0L13 10.3814L2.61857 0L0 2.61857L10.3814 13L0 23.3814L2.61857 26L13 15.6186L23.3814 26L26 23.3814L15.6186 13L26 2.61857Z" fill="#48484A"/>
+                              </svg>  
                         </button>
                     </div>
                     <nav class="burger-menu__nav">
                         <input class="btn burger-menu__search" type="text" placeholder="Mосква">
-                        <img class="burger-menu__img-search" src="./img/search.svg">
-                        <button class="btn burger-menu__find">Найти</button>
+                        <img class="burger-menu__img-search" src="./img/aside/svg/search.svg">
+                        <button class="btn btn-reset burger-menu__find">Найти</button>
                     </nav>
                 </div>
             </div>
 
             <div class="weather-now__find-city">
-                <button class="btn weather-now__btn">
+                <button class="btn btn-reset weather-now__btn">
                     Поиск города
                 </button>
             </div>
@@ -51,6 +50,113 @@
                 <p class="text weather-now__city">Москва</p>
             </div>
         </aside>
+
+        <main class="main-container">
+            <section class="weather-interval">
+                <div class="weather-interval__wrapper">
+                    <h2 class="h2 weather-interval__title">Прогноз</h2>
+                    <ul class="weather-interval__box">
+                        <li>
+                            <button class="btn-reset weather-interval__btn weather-interval__btn_active">
+                                на неделю
+                            </button>
+                        </li>
+                        <li>
+                            <button class="btn-reset weather-interval__btn weather-interval__btn_no-active">
+                                почасовой
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="weather-card-boxs">
+                    <ul class="weather-card-box weather-card-box_active">
+                        <li class="weather-card weather-card_fog">
+                            <h3 class="h3 weather-card__title">Завтра</h3>
+                            <div class="weather-card__temperature">
+                                <span class="weather-card__temperature_day">10°C</span>
+                                <span class="weather-card__temperature_night">4°C</span>
+                            </div>
+                        </li>
+                        <li class="weather-card weather-card_rain">
+                            <h3 class="h3 weather-card__title">Пн, 15 мар</h3>
+                            <div class="weather-card__temperature">
+                                <span class="weather-card__temperature_day">10°C</span>
+                                <span class="weather-card__temperature_night">4°C</span>
+                            </div>
+                        </li>
+                        <li class="weather-card weather-card_rain">
+                            <h3 class="h3 weather-card__title">Вт, 16 мар</h3>
+                            <div class="weather-card__temperature">
+                                <span class="weather-card__temperature_day">10°C</span>
+                                <span class="weather-card__temperature_night">4°C</span>
+                            </div>
+                        </li>
+                        <li class="weather-card weather-card_storm">
+                            <h3 class="h3 weather-card__title">Ср, 17 мар</h3>
+                            <div class="weather-card__temperature">
+                                <span class="weather-card__temperature_day">10°C</span>
+                                <span class="weather-card__temperature_night">4°C</span>
+                            </div>
+                        </li>
+                        <li class="weather-card weather-card_storm">
+                            <h3 class="h3 weather-card__title">Чт, 18 мар</h3>
+                            <div class="weather-card__temperature">
+                                <span class="weather-card__temperature_day">10°C</span>
+                                <span class="weather-card__temperature_night">4°C</span>
+                            </div>
+                        </li>
+                        <li class="weather-card weather-card_storm">
+                            <h3 class="h3 weather-card__title">Пт, 19 мар</h3>
+                            <div class="weather-card__temperature">
+                                <span class="weather-card__temperature_day">10°C</span>
+                                <span class="weather-card__temperature_night">4°C</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="weather-card-box weather-card-box_no-active none">
+                        <li class="weather-card weather-card_fog">
+                            <h3 class="h3 weather-card__title weather-card__title_hours">15:00</h3>
+                            <span class="weather-card__temperature_day">10°C</span>
+                        </li>
+                        <li class="weather-card weather-card_fog">
+                            <h3 class="h3 weather-card__title weather-card__title_hours">16:00</h3>
+                            <span class="weather-card__temperature_day">10°C</span>
+                        </li>
+                        <li class="weather-card weather-card_fog">
+                            <h3 class="h3 weather-card__title weather-card__title_hours">17:00</h3>
+                            <span class="weather-card__temperature_day">10°C</span>
+                        </li>
+                        <li class="weather-card weather-card_fog">
+                            <h3 class="h3 weather-card__title weather-card__title_hours">18:00</h3>
+                            <span class="weather-card__temperature_day">10°C</span>
+                        </li>
+                        <li class="weather-card weather-card_storm">
+                            <h3 class="h3 weather-card__title weather-card__title_hours">19:00</h3>
+                            <span class="weather-card__temperature_day">10°C</span>
+                        </li>
+                        <li class="weather-card weather-card_storm">
+                            <h3 class="h3 weather-card__title weather-card__title_hours">20:00</h3>
+                            <span class="weather-card__temperature_day">10°C</span>
+                        </li>
+                    </ul>
+                    <button class="btn-reset slide-btn slide-btn__left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <circle cx="19" cy="19" r="19" transform="rotate(-180 19 19)" fill="white"/>
+                            <path d="M23 24.5L13.8735 18.8503C13.242 18.4593 13.242 17.5407 13.8735 17.1497L23 11.5" stroke="#ACACAC" stroke-width="3"/>
+                        </svg>
+                    </button>
+                    <button class="btn-reset slide-btn slide-btn__right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                            <circle cx="19" cy="19" r="19" fill="white"/>
+                            <path d="M15 13.5L24.1265 19.1497C24.758 19.5407 24.758 20.4593 24.1265 20.8503L15 26.5" stroke="#ACACAC" stroke-width="3"/>
+                        </svg>
+                    </button>  
+                </div>
+            </section>
+            <section class="weather-today">
+                
+            </section>
+        </main>
     </div>
 
     <script src="./main.js"></script>

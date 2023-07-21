@@ -1,0 +1,144 @@
+.weather-interval__wrapper {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.weather-interval__title {
+    margin-right: 24px;
+}
+
+.weather-interval__box {
+    display: flex;
+    gap: 16px;
+}
+
+.weather-interval__btn {
+    color: var(--hint, #ACACAC);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.weather-interval__btn_active {
+    min-width: 110px;
+    min-height: 20px;
+
+    color: var(--gray, #48484A);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+
+    border: none;
+}
+
+.weather-interval__btn_active::after {
+    content: "";
+    display: block;
+    margin-top: 6px;
+    left: 0;
+    width: 110px;
+    height: 3px;
+    background-color: #48484A;
+    transition: width 0.45s ease-out;
+}
+
+.weather-interval__btn_active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--gray, #48484A);
+    transition: width 0.45s ease-out;
+}
+
+.weather-card-boxs {
+    position: relative;
+}
+
+.weather-card-box {
+    display: flex;
+    gap: 24px;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    padding-bottom: 14px;
+    width: 100px;
+    height: 143px;
+    flex-shrink: 0;
+
+    border-radius: 8.362px;
+    background: var(--panel-light, #FFF);
+    box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+.weather-card::after {
+	content: '';
+    top: 24px;
+    left: 0;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+	width: 100px;
+	height: 100px;
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
+.weather-card_fog::after {
+    background-image: url(../img/weather-interval/png/fog.png);
+}
+
+.weather-card_rain::after {
+    background-image: url(../img/weather-interval/png/rain.png);
+}
+
+.weather-card_storm::after {
+    background-image: url(../img/weather-interval/png/storm.png);
+}
+
+.weather-card__title {
+    margin-top: 17px;
+    margin-bottom: 72px;
+}
+
+.weather-card__temperature {
+    display: flex;
+    column-gap: 18px;
+}
+
+.weather-card__temperature_day {
+    color: var(--gray, #48484A);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.weather-card__temperature_night {
+    color: #D3D3D3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.slide-btn {
+    position: absolute;
+    transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+.slide-btn__right {
+    right: -64px;
+    top: 55px;
+}
+
+.slide-btn__left {
+    left: -64px;
+    top: 55px;
+}

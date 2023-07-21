@@ -14,23 +14,23 @@
     letter-spacing: 0em;
     text-align: center;
 
-    background-color: transparent;
     border-radius: 10px;
     border: 2px solid #ACACAC;
 }
 
 .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
-
-    min-height: 100vh;
-    min-width: 100vh;
 }
 
 .weather-now {
-    min-width: 460px;
+    width: 460px;
+    min-height: 100vh;
+    background-color: #FFFFFF !important;
 
-	background: url(../img/snowflake.png) center 116px no-repeat, 
-				url(../img/cloud-background.jpg) center 110px no-repeat;
+	background: url(../img/aside/png/snowflake.png) center 116px no-repeat, 
+				url(../img/aside/png/cloud-background.jpg) center 110px no-repeat;
 }
 
 /*  Работа с бургер-меню */
@@ -130,6 +130,11 @@
     font-weight: 700;
 }
 
+.burger-menu__find:hover {
+    background-color:  #f1f1f1;
+    border: 2px solid #48484A;
+}
+
 /* /Работа с бургер-меню */
 
 .weather-now__find-city {
@@ -214,7 +219,7 @@
     vertical-align: middle;
 	width: 40px;
 	height: 40px;
-    background-image: url(../img/location.svg);
+    background-image: url(../img/aside/svg/location.svg);
     background-repeat: no-repeat;
     background-size: initial;
 }

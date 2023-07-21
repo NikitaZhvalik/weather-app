@@ -8,11 +8,11 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
-    background-color: var(--body);
+    background-color: var(--background-light, #F1F1F1);
     font-family: 'Rubik', sans-serif;
 }
 
@@ -21,7 +21,7 @@ img {
     max-width: 100%;
     object-fit: cover;
 }
-  
+
 a {
     text-decoration: none;
 }
@@ -31,4 +31,34 @@ ol {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.none {
+    display: none !important;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.h2 {
+    color: var(--gray, #48484A);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.h3 {
+    color: var(--gray, #48484A);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
 }
